@@ -17,16 +17,9 @@ export default function Main() {
 
 	return (
 		<main className='main'>
-			<h2 className="main__title">Ручной поиск</h2>
+			<h2 className="main__title">Ручной поиск (Авторы идут в <span>алфавитном</span> порядке)</h2>
 			<div className="main__box">
-				<div className="main__buttons">
-					<button className="main__sort">
-						По исполнителю
-					</button>
-					<button className="main__sort">
-						По названию
-					</button>
-				</div>
+
 				<div className="main__items">
 					{isLoading ?
 						<div style={{ textAlign: 'center', marginTop: '40px' }}>
