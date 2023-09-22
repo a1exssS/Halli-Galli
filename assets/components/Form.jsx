@@ -78,13 +78,6 @@ export default function Form() {
 					<span className='header__text'>
 						Результаты поиска
 					</span>
-					{isLoading &&
-						<div style={{ textAlign: 'center', marginTop: '40px' }}>
-							<div className="spinner-border text-warning" style={{ width: "6rem", height: "6rem" }} role="status">
-								<span className="visually-hidden">Loading...</span>
-							</div>
-						</div>
-					}
 					{foundData.length !== 0 ? foundData.map((item, index) => {
 						return <div className="header__result" key={index}>
 							<div>
